@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StateLayout</string>
+    <string name="state_loading">正在加载</string>
+    <string name="state_empty">这里什么都没有</string>
+    <string name="state_error">加载失败</string>
+    <string name="state_network_error">网络异常,请检查网络</string>
+    <string name="click_screen_and_retry">点击屏幕,重新加载</string>
+</resources>

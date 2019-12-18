@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingBar">
+        <attr name="bar_background" format="color"/>
+        <attr name="bar_color" format="color"/>
+        <attr name="bar_height" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="StateLayout">
+        <!--空页面图片-->
+        <attr name="state_empty_img" format="reference"/>
+        <!--错误页面图片-->
+        <attr name="state_error_img" format="reference"/>
+        <!--网络错误图片-->
+        <attr name="state_net_error_img" format="reference"/>
+        <!--加载页面提示文字-->
+        <attr name="state_loading_tip" format="string"/>
+        <!--空页面提示文字-->
+        <attr name="state_empty_tip" format="string"/>
+        <!--错误页面提示文字-->
+        <attr name="state_error_tip" format="string"/>
+        <!--网络错误提示文字-->
+        <attr name="state_net_error_tip" format="string"/>
+        <!--提示文字颜色-->
+        <attr name="state_tip_text_color" format="color"/>
+        <!--提示文字大小-->
+        <attr name="state_tip_text_size" format="dimension"/>
+        <!--点击重试按钮样式-->
+        <attr name="state_retry_drawable" format="reference"/>
+        <!--点击重试文字-->
+        <attr name="state_retry_text" format="string"/>
+        <!--点击重试按钮文字颜色-->
+        <attr name="state_retry_text_color" format="color"/>
+        <!--点击重试按钮文字大小-->
+        <attr name="state_retry_text_size" format="dimension"/>
+        <!--自定义加载布局文件-->
+        <attr name="state_loading_layout" format="reference"/>
+        <!--自定义空布局文件-->
+        <attr name="state_empty_layout" format="reference"/>
+        <!--自定义错误布局文件-->
+        <attr name="state_error_layout" format="reference"/>
+        <!--自定义网络错误布局文件-->
+        <attr name="state_net_error_layout" format="reference"/>
+        <!--LoadingBar颜色-->
+        <attr name="state_loading_bar_color" format="color"/>
+    </declare-styleable>
+</resources>

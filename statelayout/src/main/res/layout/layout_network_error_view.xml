@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_error_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/state_net_error_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_state_net_error"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/state_net_error_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/state_network_error"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/state_text_color"
+            android:textSize="@dimen/state_text_size"/>
+        <include layout="@layout/layout_retry_tv"/>
+    </LinearLayout>
+</FrameLayout>
