@@ -6,12 +6,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+<!--    <com.lzk.statelayout.view.StateLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:state_error_layout="@layout/layout_custom_error"
+        app:state_loading_layout="@layout/layout_custom_error"
+        app:state_empty_layout="@layout/layout_custom_error"
+        app:state_net_error_layout="@layout/layout_custom_error"
+        app:state_loading_bar_color="@color/colorAccent"
+        app:state_loading_tip="@string/state_loading"
+        app:state_error_tip="@string/state_error"
+        app:state_empty_tip="@string/state_empty"
+        app:state_net_error_tip="@string/state_empty"
+        app:state_retry_text="@string/click_screen_and_retry"
+        app:state_retry_drawable="@drawable/bg_retry"
+        app:state_retry_text_color="@color/colorWhite"
+        app:state_retry_text_size="14sp"
+        app:state_empty_img="@drawable/ic_default"
+        app:state_error_img="@drawable/ic_default"
+        app:state_net_error_img="@drawable/ic_default"
+        app:state_tip_text_color="@color/colorPrimary"
+        app:state_tip_text_size="16sp"
+        >
+
+    </com.lzk.statelayout.view.StateLayout>-->
     <com.lzk.statelayout.view.StateLayout
         android:id="@+id/main_state_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        >
+        android:layout_weight="1">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
