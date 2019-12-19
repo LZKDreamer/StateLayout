@@ -36,6 +36,7 @@ dependencies {
     </com.lzk.statelayout.view.StateLayout>
 ```
 - XML自定义属性
+
  | 自定义属性 | 说明 | 
  |  ----  | ----  |
  | app:state_error_layout="@layout/layout_custom_error" | 自定义错误布局文件 | 
