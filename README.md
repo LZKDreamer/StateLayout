@@ -1,6 +1,10 @@
 # StateLayout
 [![](https://jitpack.io/v/LZKDreamer/StateLayout.svg)](https://jitpack.io/#LZKDreamer/StateLayout)   
+
+##API19+
+
 状态View,包含加载页面，空页面，错误页面，网络错误页面。内含状态默认页面，也支持**自定义状态页面**。
+**StateLayout**继承自**FrameLayout**
 
 # 预览图
 ![预览图GIF](https://github.com/LZKDreamer/StateLayout/blob/master/screenshot/demo.gif)
