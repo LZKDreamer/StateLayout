@@ -60,15 +60,14 @@ dependencies {
 	
 * 回调
 
-    -如果空页面、错误页面、网络错误页面的重试事件是一样的则使用OnReloadListener
+    - 如果空页面、错误页面、网络错误页面的重试事件是一样的则使用OnReloadListener
 ```
 public interface OnReloadListener{
         void onStateReload();
     }
 ```
 
-    -如果空页面、错误页面、网络错误页面的重试事件需要分别处理则使用OnStateListener
-    
+    - 如果空页面、错误页面、网络错误页面的重试事件需要分别处理则使用OnStateListener
 ```
 public interface OnStateListener{
         void onStateEmpty();
