@@ -6,7 +6,7 @@
 ![预览图GIF](https://github.com/LZKDreamer/StateLayout/blob/master/screenshot/demo.gif)
 
 # 引入
-Step 1. Add the JitPack repository to your build file
+Step 1. 在项目的build.gradle中添加
 ```
 allprojects {
     repositories {
@@ -15,7 +15,7 @@ allprojects {
 	}
 }
 ```
-Step 2. Add the dependency
+Step 2. 在app的build.gradle中添加
 ```
 dependencies {
     implementation 'com.github.LZKDreamer:StateLayout:1.0'
@@ -36,31 +36,39 @@ dependencies {
     </com.lzk.statelayout.view.StateLayout>
 ```
 - XML自定义属性
-```
-        app:state_error_layout="@layout/layout_custom_error"//自定义错误布局文件
-        app:state_loading_layout="@layout/layout_custom_error"//自定义加载布局文件
-        app:state_empty_layout="@layout/layout_custom_error"//自定义空布局文件
-        app:state_net_error_layout="@layout/layout_custom_error"//自定义网络错误布局文件
-        app:state_loading_bar_color="@color/colorAccent"//LoadingBar的颜色
-        app:state_loading_tip="@string/state_loading"//加载提示文字(例如:正在加载)
-        app:state_error_tip="@string/state_error"//错误提示文字(例如:加载失败)
-        app:state_empty_tip="@string/state_empty"//空提示文字(例如:这里什么都没有)
-        app:state_net_error_tip="@string/state_empty"//网络错误提示文字(例如:网络未连接,请检查网络)
-        app:state_retry_text="@string/click_screen_and_retry"//重试按钮提示文字(例如:点击屏幕重试)
-        app:state_retry_drawable="@drawable/bg_retry"//重试按钮的drawable文件,添加圆角什么的
-        app:state_retry_text_color="@color/colorWhite"//重试文字颜色
-        app:state_retry_text_size="14sp"//重试文字大小(sp)
-        app:state_empty_img="@drawable/ic_default"//空页面图片
-        app:state_error_img="@drawable/ic_default"//错误页面图片
-        app:state_net_error_img="@drawable/ic_default"//网络错误页面图片
-        app:state_tip_text_color="@color/colorPrimary"//提示文字的颜色
-        app:state_tip_text_size="16sp"//提示文字的大小(sp)
-```
+|自定义属性|说明|
+|app:state_error_layout="@layout/layout_custom_error"|自定义错误布局文件|
+|app:state_loading_layout="@layout/layout_custom_error"|自定义加载布局文件|
+|app:state_empty_layout="@layout/layout_custom_error"|自定义空布局文件|
+|app:state_net_error_layout="@layout/layout_custom_error"|自定义网络错误布局文件|
+|app:state_loading_bar_color="@color/colorAccent"|LoadingBar的颜色|
+|app:state_loading_tip="@string/state_loading"|加载提示文字(例如:正在加载)|
+|app:state_error_tip="@string/state_error"|错误提示文字(例如:加载失败)|
+|app:state_empty_tip="@string/state_empty"|空提示文字(例如:这里什么都没有)|
+|app:state_net_error_tip="@string/state_empty"|网络错误提示文字(例如:网络未连接,请检查网络)|
+|app:state_retry_text="@string/click_screen_and_retry"|重试按钮提示文字(例如:点击屏幕重试)|
+|app:state_retry_drawable="@drawable/bg_retry"|重试按钮的drawable文件,添加圆角什么的|
+|app:state_retry_text_color="@color/colorWhite"|重试文字颜色|
+|app:state_retry_text_size="14sp"|重试文字大小(sp)|
+|app:state_empty_img="@drawable/ic_default"|空页面图片|
+|app:state_error_img="@drawable/ic_default"|错误页面图片|
+|app:state_net_error_img="@drawable/ic_default"|网络错误页面图片|
+|app:state_tip_text_color="@color/colorPrimary"|提示文字的颜色|
+|app:state_tip_text_size="16sp"|提示文字的大小(sp)|
+	
 * 回调
-如果
+如果空页面、错误页面、网络错误页面的重试事件是一样的则使用OnReloadListener
 ```
 public interface OnReloadListener{
         void onStateReload();
+    }
+```
+如果空页面、错误页面、网络错误页面的重试事件需要分别处理则使用OnStateListener
+```
+public interface OnStateListener{
+        void onStateEmpty();
+        void onStateError();
+        void onStateNetError();
     }
 ```
 * java
