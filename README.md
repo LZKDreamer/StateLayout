@@ -37,6 +37,7 @@ dependencies {
 ```
 - XML自定义属性
 |自定义属性|说明|
+|  ----  | ----  |
 |app:state_error_layout="@layout/layout_custom_error"|自定义错误布局文件|
 |app:state_loading_layout="@layout/layout_custom_error"|自定义加载布局文件|
 |app:state_empty_layout="@layout/layout_custom_error"|自定义空布局文件|
