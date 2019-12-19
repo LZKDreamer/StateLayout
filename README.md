@@ -61,6 +61,7 @@ dependencies {
 * 回调
 
     - 如果空页面、错误页面、网络错误页面的重试事件是一样的则使用OnReloadListener
+    
 ```
 public interface OnReloadListener{
         void onStateReload();
