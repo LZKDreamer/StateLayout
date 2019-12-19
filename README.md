@@ -56,7 +56,13 @@ dependencies {
         app:state_tip_text_color="@color/colorPrimary"//提示文字的颜色
         app:state_tip_text_size="16sp"//提示文字的大小(sp)
 ```
-
+* 回调
+如果
+```
+public interface OnReloadListener{
+        void onStateReload();
+    }
+```
 * java
 ```
         mStateLayout = findViewById(R.id.main_state_layout);
